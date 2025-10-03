@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 20px;
+    background-color: tomato;
+}
+
+.contenedor{
+    /*con display grid parto mi contendot en cuadros con filas y columnas*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/*dos columaas*/
+    gap: 20px;/*define el espacio entre las columnas*/
+}
+
+.caja{
+    background-color: aquamarine;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+ @media(max-width:600px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        background-color: blue;
+    }
+ }
+  @media(max-width:800px) and (min-width:601px) {
+    .contenedor{
+        grid-template-columns:repeat(3,1fr);
+        background-color: black;
+    }
+ }
+

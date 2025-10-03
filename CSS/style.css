@@ -20,13 +20,58 @@ body{
  @media(max-width:600px) {
     .contenedor{
         grid-template-columns: 1fr;
-        background-color: blue;
+        border-radius: 10px;
+    }
+    .caja{
+        background-color: crimson;
     }
  }
   @media(max-width:800px) and (min-width:601px) {
     .contenedor{
         grid-template-columns:repeat(3,1fr);
-        background-color: black;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .caja{
+        background-color: chartreuse;
     }
  }
+
+ .cajap{
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 10px;
+
+ }
+
+ .contenedorp{
+    display: grid;
+    grid-template-columns: repeat(4,3fr);/*dos columaas*/
+    gap: 20px;/*define el espacio entre las columnas*/
+ }
+
+ img{
+    width: 50px;
+    height: auto;
+ }
+ @media(max-width:600px) {
+    .contenedorp{
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+    }
+    .cajap{
+        background-color: crimson;
+    }
+ }
+  @media(max-width:800px) and (min-width:601px) {
+    .contenedorp{
+        grid-template-columns:repeat(3,1fr);
+        font-size: large;
+        border-radius: 10px;
+    }
+    .cajap{
+        background-color: chartreuse;
+    }
+ }
+
 
